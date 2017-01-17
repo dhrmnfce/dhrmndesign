@@ -1,0 +1,51 @@
+/* PANELS */
+@import 'lib';
+
+$panel-text: $white;
+$primary-panel-background: $teal;
+$primary-panel-border-color: $teal;
+$success-panel-background: $green;
+$success-panel-border-color: $green;
+$warning-panel-background: $yellow;
+$warning-panel-border-color: $yellow;
+$danger-panel-background: $red;
+$danger-panel-border-color: $red;
+$info-panel-background: $teal;
+$info-panel-border-color: $teal;
+
+.panel {
+    margin-bottom: $margin;
+    background-color: $primary-background;
+    border: $border-size $border-type $border-color;
+    @include round-corners;
+}
+
+.panel-heading {
+    padding: $padding;
+    background: $secondary-background;
+    border-bottom: $border-size $border-type $border-color;
+}
+
+.panel-title {
+    font-size: $font-size;
+}
+
+.panel-footer {
+    padding: $padding;
+    background-color: $secondary-background;
+    border-top: $border-size $border-type $border-color;
+}
+
+.panel > .list-group:last-child .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+.panel-primary {
+    border-color: $primary-panel-border-color;
+}
+
+.panel-primary .panel-heading {
+    color: $teal4;
+    background: $primary-panel-background;
+    border-color: $primary-panel-border-color;
+}

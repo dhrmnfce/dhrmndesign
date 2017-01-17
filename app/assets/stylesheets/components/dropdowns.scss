@@ -1,0 +1,51 @@
+/* DROPDOWNS */
+@import 'lib';
+@import 'buttons';
+
+$dropdown-link-hover: $white;
+$dropdown-arrow-color: $teal4;
+$dropdown-background-hover: $teal2;
+$dropdown-button-min-width: 150px;
+
+.dropdown-menu {
+    border: $border-size $border-type $border-color;
+    background: $primary-background;
+    @include round-corners;
+    @include box-shadow;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+    color: $dropdown-link-hover;
+    background-color: $dropdown-background-hover;
+    background-image: none;
+}
+
+a.btn:focus, a.btn-primary:focus {
+    border: none;
+    color: $button-primary-text;
+    background: $button-primary-background;
+    @include box-shadow;
+}
+
+a.btn:active:focus, a.btn-primary:active:focus {
+    border: none;
+    color: $button-primary-text;
+    background: $button-primary-background;
+    @include box-shadow;
+}
+
+.dropdown-menu .divider {
+    background-color: $border-color;
+}
+
+.caret {
+    border-top: ($border-size + 3) $border-type $dropdown-arrow-color;
+}
+
+.dropdown-header {
+    color: $light-text;
+    font-size: ($font-size - 0.25);
+    padding: ($padding - 0.5);
+}

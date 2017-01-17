@@ -1,0 +1,144 @@
+/* FORMS */
+@import 'lib';
+
+$addon-background: $teal;
+$addon-text: $teal4;
+$addon-border-color: $border-color;
+
+.form-control { 
+    color: $primary-text; 
+    background: $primary-background; 
+    border: $border-type $border-size $border-color; 
+    @include box-shadow;
+    @include round-corners;
+    @include transition; 
+}
+
+legend {
+    font-family: $heading-copy; 
+    color: $primary-text; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    border-bottom: ($border-size * 5) $border-type $off-white;
+}
+
+fieldset { 
+    margin-bottom: ($margin * 2);
+} 
+ 
+fieldset:last-child {
+    margin: 0;
+}
+
+textarea{
+    -webkit-appearance: textarea;
+    height: 10vh;
+}
+
+input, 
+select, 
+textarea,  
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    background-color: $teal; 
+    border: 0;   
+    @include round-corners;
+    &:focus {
+        color: $teal4;
+        @include form-shadow;
+    }
+} 
+
+.textarea{
+    background-color: $teal;
+    border: 0;
+    @include form-shadow;
+}
+
+select:focus {
+    border: 0;
+    @include form-shadow;
+}
+
+textarea:focus {
+    border-color: none;
+    color: $teal4;
+    @include form-shadow;
+}
+
+/* APPLY .textarea CLASS TO textarea TO OVERWRITE VENDOR CRAP FOR :focus */
+.textarea:focus {
+    border-color: none;
+    color: $teal4;
+    @include form-shadow;
+}
+/* APPLY .textarea CLASS TO textarea TO OVERWRITE VENDOR CRAP FOR :focus */
+
+form.form-inline select,
+form.form-inline input[type="text"],
+form.form-inline input[type="password"],
+form.form-inline input[type="datetime"],
+form.form-inline input[type="datetime-local"],
+form.form-inline input[type="date"],
+form.form-inline input[type="month"],
+form.form-inline input[type="time"],
+form.form-inline input[type="week"],
+form.form-inline input[type="number"],
+form.form-inline input[type="email"],
+form.form-inline input[type="url"],
+form.form-inline input[type="search"],
+form.form-inline input[type="tel"],
+form.form-inline input[type="color"] {
+    width: 120px;
+}
+
+form.form-search {
+    background: transparent;
+    padding: 0;
+}
+
+input[type="file"] {
+    border: 0;
+}
+
+.help-block {
+    font-size: ($font-size - 0.125);
+    color: $light-grey;
+}
+
+form small {
+    padding-left: ($padding - 0.5);
+}
+
+.input-group-addon {
+    background: $addon-background;
+    color: $addon-text;
+    border: none;
+    @include round-corners;
+}
+
+.input-group-btn button {
+    font-size: 14px;
+    background-color: $teal;
+    color: $teal4;
+    border: $border-size $border-type $border-color;
+    @include transition;
+    &:hover {
+        border: $border-size $border-type $border-color;
+        background-color: $teal2;
+        color: $teal4;
+    }
+}

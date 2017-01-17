@@ -1,0 +1,43 @@
+/* PAGINATION */
+@import 'lib';
+
+$pagination-background: $teal;
+$pagination-background-hover: $teal2;
+
+.pagination ul {
+    margin-bottom: 0;
+    margin-left: 0;
+    @include round-corners;
+}
+
+.pagination li > a,
+.pagination li > span {
+    border: $border-size $border-type $border-color;
+    padding: ($padding - 0.5) $padding;
+    background: $pagination-background;
+    color: $teal4;
+}
+
+.pagination li > a:hover,
+.pagination .active > a,
+.pagination .active > span {
+    background: $inverse-background;
+    color: $inverse-text;
+    border: $border-size $border-type $border-color;
+    background: $pagination-background-hover;
+    color: $sand;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background: $inverse-background;
+    border-color: $inverse-background;
+    border: $border-size $border-type $border-color;
+    background: $pagination-background-hover;
+    color: $sand;
+}
+

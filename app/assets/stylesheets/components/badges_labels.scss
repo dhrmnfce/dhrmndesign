@@ -1,0 +1,40 @@
+/* BADGES AND LABELS */
+@import 'lib';
+
+.label,
+.badge {
+    background: $secondary-background;
+    padding: ($padding - 0.5) $padding;
+    @include round-corners;
+}
+
+.label-default,
+.badge-default {
+    color: $primary-text;
+}
+
+.label-primary,
+.badge-primary {
+    background: $teal2;
+}
+
+.label-success,
+.badge-success {
+    background: $green;
+}
+
+.label-warning,
+.badge-warning {
+    background: $yellow;
+}
+
+.label-danger,
+.badge-danger {
+    background: $red;
+}
+
+.label-info,
+.badge-info {
+    background: $teal;
+    color: $teal3;
+}

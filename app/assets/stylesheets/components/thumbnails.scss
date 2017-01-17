@@ -1,0 +1,15 @@
+/* THUMBNAILS */
+@import 'lib';
+
+.thumbnail, .img-thumbnail {
+    border: $border-size $border-type $border-color;
+    @include transition;
+}
+
+.thumbnail .caption p:last-child {
+    margin-bottom: 0;
+}
+
+.thumbnail:hover, .thumbnail:focus, .img-thumbnail:hover, .img-thumbnail:focus {
+    border: $border-size $border-type $border-focus;
+}

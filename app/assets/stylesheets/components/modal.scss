@@ -1,0 +1,36 @@
+/* MODAL */
+@import 'lib';
+
+.modal-dialog {
+    margin: ($margin * 2) auto;
+}
+
+.modal-content {
+    background: $off-white;
+    border: $border-size $border-type $border-color;
+    @include round-corners;
+}
+
+.modal-header {
+    padding: $padding;
+    border-bottom: $border-size $border-type $border-color;
+}
+
+.modal-header .close {
+    line-height: $base-line-height;
+    margin-top: 0;
+}
+
+.modal-title {
+    line-height: $base-line-height;
+}
+
+.modal-body {
+    padding: $padding;
+}
+
+.modal-footer {
+    margin-top: $margin;
+    padding: $padding;
+    border-top: $border-size $border-type $border-color;
+}

@@ -1,2 +1,62 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="center jumbotron">
+  <h1>Dhrmndesign</h1>
+
+  <h4>(der-min•dih-zayhn)</h4>
+</div>
+
+<div class="container-fluid" id="about">
+  <div class="container">
+    <h1 class="info_header">about</h1>
+    <div class="row">
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 about_block center">Lorem Ipsum</div>
+      </div>
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 about_block center">Lorem Ipsum</div>
+      </div>
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 about_block center">Lorem Ipsum</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="about_bumper"></div>
+
+<div class="container-fluid" id="services">
+  <div class="container">
+    <h1 class="info_header">services</h1>
+    <div class="row">
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 services_block center">Lorem Ipsum</div>
+      </div>
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 services_block center">Lorem Ipsum</div>
+      </div>
+      <div class="col-md-4 col-xs-12 info_container">
+        <div class="col-xs-12 services_block center">Lorem Ipsum</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="services_bumper"></div>
+
+<div class="container-fluid" id="contact">
+  <div class="container">
+    <h1 class="info_header">contact</h1>
+      <div class="row">
+        <div class="col-md-12">
+            <p class="center">Drop a line about your website or application needs, and let's get to working together.</p>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <% flash.each do |key, value| %>
+                  <%= content_tag :div, value, class: "alert alert-#{key}" %>
+                <% end %>
+                <%= render 'contacts/new' %>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

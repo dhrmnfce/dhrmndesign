@@ -1,0 +1,11 @@
+/* TOOLTIPS */
+@import 'lib';
+
+.tooltip {
+    font-size: $font-size;
+}
+
+.tooltip-inner {
+    padding: ($padding - 0.5) $padding;
+    @include round-corners;
+}

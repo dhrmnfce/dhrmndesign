@@ -1,0 +1,10 @@
+/* BREADCRUMBS */
+@import 'lib';
+
+ul.breadcrumb {
+    margin-left: 0;
+}
+
+.breadcrumb li.active a {
+    color: $teal;
+}

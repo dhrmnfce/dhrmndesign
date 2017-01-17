@@ -1,0 +1,122 @@
+// VARIABLES
+
+
+// Color Palette
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/* Brand Colors */
+
+$teal: #C7E4C6;
+$teal2: #A5D5AA;
+$teal3: #82C9A0;
+$teal4: #64A69F;
+$sand: #F0E1B2;
+
+$teal-tint: tint( $teal, 50% );
+$sand-tint: tint( $sand, 50%);
+
+/* Other Colors */
+
+$steel-grey: #34495e;
+$steel-grey2: #2c3e50;
+$off-white: #ecf0f1;
+$light-grey: #bdc3c7;
+$grey: #95a5a6;
+$medium-grey: #7f8c8d;
+$white: #fff;
+$dark-grey: #333;
+$black: #232323;
+
+/* States */
+$green: #2ecc71;
+$green2: #27ae60;
+$red: #e74c3c;
+$red2: #c0392b;
+$yellow: #f1c40f;
+$yellow2: #f39c12;
+
+
+// global backgrounds 
+$primary-background: $white;
+$secondary-background: $sand;
+$navbar-background: $teal;
+$pre-text-background: $teal;
+$inverse-background: $dark-grey;
+
+
+
+// typography 
+$body-copy: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+$heading-copy: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+$heading-secondary: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+$heading-color: $teal;
+$base-font-size: 16px;
+$font-size: 1em;
+$base-line-height: 2;
+
+// global text colors 
+$primary-text: $teal4;
+$secondary-text: $teal2;
+$light-text: $light-grey;
+$loud-text: $black;
+$inverse-text: $white;
+$code-text: $teal4;
+$pre-text: $teal4;
+
+// global links 
+$primary-link-color: $red;
+$primary-link-color-hover: $red;
+
+
+
+// global borders 
+$border-color: $teal;
+$border-size: 1px;
+$border-type: solid;
+$border-focus: $teal4;
+
+// global layout 
+$margin: 1em;
+$padding: 1em;
+
+// MIXINS
+
+@mixin round-corners ($radius: 0px) {
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow ($shadow: none) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin form-shadow ($shadow: 0 0 5px $teal4) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition ($transition: background .5s linear) {
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin box-sizing ($box-sizing: border-box) {
+  -moz-box-sizing: $box-sizing; 
+  -webkit-box-sizing: $box-sizing;  
+  -ms-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
+@mixin background-clip ($background-clip: padding-box) {
+  -moz-background-clip: $background-clip;
+  -webkit-background-clip: $background-clip;
+  background-clip: $background-clip;
+}

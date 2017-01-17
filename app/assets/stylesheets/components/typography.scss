@@ -1,0 +1,75 @@
+/* TYPOGRAPHY */
+@import "lib";
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-copy;
+  font-weight: normal;
+}
+
+h1 { font-size: ($font-size * 2); /* 32px */  } 
+ 
+h2 { font-size: ($font-size + 0.75); /* 28px */  } 
+ 
+h3 { font-size: ($font-size + 0.5); /* 24px */  } 
+ 
+h4 { font-size: ($font-size + 0.313); /* 21px */  } 
+ 
+h5 { font-size: ($font-size + 0.125); /* 18px */  } 
+ 
+h6 { font-size: $font-size; /* 16px */  }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: ($font-size - 0.25); 
+    color: $light-text;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: ($margin - 0.5) 0em; }
+
+blockquote {
+    color: $secondary-text;
+    
+    .pull-right {
+        float: none;
+        padding: $padding;
+        border: 0;
+        text-align: right;
+    }
+}
+
+small, .small { 
+    font-size: ($font-size - 0.25);
+    color: $light-text;
+}
+
+code, pre {
+    font-size: $font-size;
+    @include round-corners;
+}
+
+code {
+    padding: 0 ($padding - 0.5) ($padding - 0.8);
+    background: $secondary-background;
+    color: $code-text;
+}
+
+pre {
+    color: $pre-text;
+    padding: $padding; 
+    margin: ($margin - 0.25) 0; 
+    line-height: $base-line-height;
+    background-color: $pre-text-background; 
+    border: none;
+}
+
+.info_header {
+    font-weight: 900;
+    font-size: ($font-size * 3);
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: ($margin * .5);
+    margin-top: ($margin * .25);
+    color: $primary-text;
+    @media all and (max-width: 320px) {
+        font-size: ($font-size * 2.5);
+    }
+}

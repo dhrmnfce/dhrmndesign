@@ -1,0 +1,55 @@
+/* HELPERS */
+@import 'lib';
+
+.text-muted {
+    color: $light-grey;
+}
+
+.text-primary {
+    color: $primary-text;
+}
+
+.text-success {
+    color: $green;
+}
+.text-info {
+    color: $teal2;
+}
+
+.text-warning {
+    color: $yellow;
+}
+
+.text-danger {
+    color: $red;
+}
+
+.bg-primary {
+    padding: $padding;
+    background: $inverse-background;
+    color: $white;
+}
+
+.bg-success {
+    padding: $padding;
+    background: $green;
+    color: $white;
+}
+
+.bg-info {
+    padding: $padding;
+    background: $teal2;
+    color: $white;
+}
+
+.bg-warning {
+    padding: $padding;
+    background: $yellow;
+    color: $white;
+}
+
+.bg-danger {
+    padding: $padding;
+    background: $red;
+    color: $white;
+}

@@ -1,0 +1,12 @@
+/* INPUT GROUPS */
+@import 'lib';
+
+.input-group-addon {
+    background: $teal;
+    color: $primary-text;
+    border-color: none;
+}
+
+.input-group-btn button {
+    font-size: 14px;
+}

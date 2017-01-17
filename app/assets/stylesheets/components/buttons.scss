@@ -1,0 +1,129 @@
+/* BUTTONS */
+@import 'lib';
+
+$button-default-text: $teal-tint;
+$button-default-text-hover: $teal-tint;
+$button-default-background: $teal3;
+$button-default-background-hover: $teal4;
+$button-default-border-color: none;
+$button-default-border-color-hover: none;
+$button-default-font-size: ($font-size - 0.125);
+$button-default-typecase: uppercase;
+$button-primary-text: $white;
+$button-primary-background: $teal;
+$button-primary-border-color: $teal;
+$button-primary-text-hover: $white;
+$button-primary-background-hover: $teal2;
+$button-primary-border-color-hover: $teal2;
+$button-info-text: $white;
+$button-info-background: $teal;
+$button-info-border-color: $teal;
+$button-info-text-hover: $white;
+$button-info-background-hover: $teal2;
+$button-info-border-color-hover: $teal2;
+$button-success-text: $white;
+$button-success-background: $green;
+$button-success-border-color: $green;
+$button-success-text-hover: $white;
+$button-success-background-hover: $green2;
+$button-success-border-color-hover: $green2;
+$button-warning-text: $white;
+$button-warning-background: $yellow;
+$button-warning-border-color: $yellow;
+$button-warning-text-hover: $white;
+$button-warning-background-hover: $yellow2;
+$button-warning-border-color-hover: $yellow2;
+$button-danger-text: $white;
+$button-danger-background: $red;
+$button-danger-border-color: $red;
+$button-danger-text-hover: $white;
+$button-danger-background-hover: $red2;
+$button-danger-border-color-hover: $red2;
+$button-inverse-text: $white;
+$button-inverse-background: $steel-grey;
+$button-inverse-border-color: $steel-grey;
+$button-inverse-text-hover: $white;
+$button-inverse-background-hover: $steel-grey2;
+$button-inverse-border-color-hover: $steel-grey2;
+$button-disabled-background: $light-grey;
+$button-disabled-text: $grey;
+
+.btn {
+    background-color: $button-default-background;
+    border: none;
+    color: $button-default-text;
+    cursor: pointer;
+    font-size: $button-default-font-size;
+    display: inline-block;
+    margin-bottom: 0;
+    outline: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: $button-default-typecase;
+    text-align: center;
+    text-shadow: none;
+    background-image: none;
+    font-family: $heading-copy;
+    font-weight: 700;
+    @include round-corners;
+    @include transition;
+    @include box-shadow;
+    &:hover,
+    &:active {
+        background: $button-default-background-hover;
+        color: $button-default-text-hover;
+        text-decoration: none;
+        @include transition;
+        @include box-shadow;
+    }
+    &:focus {
+        color: $teal4;
+        @include box-shadow;
+    }
+}
+
+.btn-primary,
+a.btn-primary {
+    border: none;
+    color: $button-primary-text;
+    background: $button-primary-background;
+    &:hover,
+    &:active {
+        border: none;
+        color: $button-primary-text;
+        background: $button-primary-background-hover;
+        @include box-shadow;
+    }
+}
+
+.btn:active:focus, .btn-primary:active:focus {
+    border: none;
+    color: $button-primary-text;
+    background: $button-primary-background;
+    @include box-shadow;
+}
+
+.btn:focus, .btn-primary:focus {
+    border: none;
+    color: $button-primary-text;
+    background: $button-primary-background;
+    @include box-shadow;
+}
+
+.btn-xs {
+    font-size: ($font-size - 0.375);
+}
+.btn-sm {
+    font-size: ($font-size - 0.25);
+}
+.btn-lg {
+    font-size: ($font-size + 0.5);
+}
+
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active {
+    background: $button-disabled-background;
+    color: $button-disabled-text;
+    cursor: default;
+}

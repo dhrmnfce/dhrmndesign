@@ -1,0 +1,246 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* ------- LIBRARY ------- */
+
+@import "components/lib.scss";
+
+/* ------- LIB END ------- */
+
+
+
+/* ------- MODULES ------- */
+
+@import "components/affix.scss";
+@import "components/typography.scss";
+@import "components/tables.scss";
+@import "components/tabs.scss";
+@import "components/forms.scss"; 
+@import "components/input_groups.scss";
+@import "components/buttons.scss";
+@import "components/images.scss";
+@import "components/helpers.scss";
+@import "components/icons.scss";
+@import "components/dropdowns.scss";
+@import "components/button_dropdowns.scss";
+@import "components/button_groups.scss";
+@import "components/collapse.scss";
+@import "components/navs.scss";
+@import "components/navbar.scss";
+@import "components/breadcrumbs.scss";
+@import "components/pagination.scss";
+@import "components/page_header.scss";
+@import "components/badges_labels.scss";
+@import "components/jumbotron.scss";
+@import "components/page_header.scss";
+@import "components/thumbnails.scss";
+@import "components/progress_bars.scss";
+@import "components/media_object.scss";
+@import "components/list_group.scss";
+@import "components/panels.scss";
+@import "components/wells.scss";
+@import "components/modal.scss";
+@import "components/tooltips.scss";
+@import "components/popover.scss";
+@import "components/carousel.scss";
+@import "components/scrollspy.scss";
+
+/* ------- MODULES END ------- */
+
+
+
+/* ------- STATES ------- */
+
+@import "components/alerts.scss";
+@import "components/form_validation.scss";
+
+/* ------- STATES END ------- */
+
+
+
+/* ------- LAYOUT ------- */
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+#main-container{
+    padding-left:0;
+    padding-right:0;
+    @include round-corners;
+    padding-bottom: 0;
+}
+
+/* UNIVERSAL */
+
+body {
+    
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+/* UNIVERSAL END */
+
+
+
+/* ABOUT */
+
+
+
+#about {
+  background: $secondary-background;
+  padding: $padding;
+}
+
+.info_container{
+  padding: $padding;
+}
+
+.about_block{
+  background: $teal-tint;
+  padding: ($padding * .25);
+  height: 10vh;
+}
+
+#about_bumper{
+  height: 50vh;
+  background-color: $teal;
+}
+
+
+
+/* ABOUT END */
+
+
+/* SERVICES */
+
+
+
+#services {
+  background: $secondary-background;
+  padding: $padding;
+}
+
+.services_block{
+  background: $teal-tint;
+  padding: ($padding * .25);
+  height: 10vh;
+}
+
+#services_bumper{
+  height: 50vh;
+  background-color: $teal;
+}
+
+
+
+/* SERVICES END */
+
+
+/* CONTACT */
+
+
+
+#contact {
+  background: $teal3;
+  padding: $padding;
+}
+
+#contact h1 {
+  color: $sand;
+}
+
+.textarea:active {
+    border-color: none;
+    color: $teal4;
+    @include form-shadow;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: $sand;
+  text-transform: uppercase;
+}
+
+input .btn .btn-default:active:focus, .btn-default:focus,
+.btn-default.focus,
+.btn-default:active.focus,
+.btn-default.active.focus{
+  background-color: $teal3;
+  color: $sand;
+}
+
+/* */
+
+
+
+/* CONTACT END */
+
+
+/* FOOTER */
+
+
+
+footer {
+  height: 30vh;
+  background-color: $teal4;
+  margin-top: 0;
+  padding-top: 5px;
+}
+
+footer a {
+  color: $teal;
+  font-size: $font-size;
+  @include transition;
+  
+  &:hover, &:active {
+    color: $sand;
+    @include transition;
+  }
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+#page-nav {
+  float: right;
+}
+
+footer nav p {
+  text-align: center;
+  @include transition;
+}
+
+footer nav a:hover {
+  text-decoration: none;
+  @include transition;
+}
+
+
+
+/* FOOTER END */
+
+/* ------- LAYOUT END ------- */

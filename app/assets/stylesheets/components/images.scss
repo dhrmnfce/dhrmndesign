@@ -1,0 +1,15 @@
+/* IMAGES */
+@import 'lib';
+
+.img-rounded {
+    @include round-corners;
+}
+
+.img-thumbnail {
+    padding: ($padding - 0.5);
+    line-height: $base-line-height;
+    background-color: $primary-background;
+    border: $border-size $border-type $border-color;
+    @include round-corners;
+    @include transition;
+}

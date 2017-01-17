@@ -1,0 +1,69 @@
+/* ALERTS */
+@import 'lib';
+
+$alert-default-text: $teal4;
+$alert-default-background: $sand;
+$alert-danger-text: $sand;
+$alert-danger-background: $red;
+$alert-success-text: $teal;
+$alert-success-background: $teal4;
+$alert-info-background: $teal;
+
+
+.alert,
+.alert-danger,
+.alert-success,
+.alert-info,
+.alert-block {
+    text-shadow: none;
+    border: 0;
+    padding: $padding;
+    margin-bottom: $margin;
+    text-align: center;
+    @include round-corners;
+}
+
+.alert {
+    background-color: $alert-default-background;
+    color: $teal4;
+}
+
+.alert-danger {
+    background-color: $alert-danger-background;
+    color: $alert-danger-text;
+}
+
+.alert-success {
+    background-color: $alert-success-background;
+    color: $alert-success-text;
+}
+
+.alert-info {
+    background-color: $alert-info-background;
+    color: $alert-default-text;
+}
+
+.alert a {
+    color: $teal2;
+}
+
+.alert-danger a {
+    color: $red2;
+}
+
+.alert-success a {
+    color: $green2;
+}
+
+.alert-info a {
+    color: $teal3;
+}
+
+
+.alert a:hover {
+    color: $white;
+}
+
+.alert p:last-child {
+    margin-bottom: 0;
+}

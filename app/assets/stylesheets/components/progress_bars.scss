@@ -1,0 +1,34 @@
+/* PROGRESS BARS */
+@import 'lib';
+
+.progress {
+    margin-bottom: $margin;
+    background: $sand-tint;
+    @include round-corners;
+}
+
+.progress-bar {
+    font-size: $font-size;
+    color: $white;
+    @include transition;
+}
+
+.progress-bar-info,
+.progress-striped .progress-bar-info {
+    background-color: $teal3;
+}
+
+.progress-bar-success,
+.progress-striped .progress-bar-success {
+    background-color: $green;
+}
+
+.progress-bar-warning,
+.progress-striped .progress-bar-warning {
+    background-color: $sand;
+}
+
+.progress-bar-danger,
+.progress-striped .progress-bar-danger {
+    background-color: $red;
+}

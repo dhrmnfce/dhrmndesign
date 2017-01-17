@@ -1,0 +1,20 @@
+/* WELLS */
+@import 'lib';
+
+.well {
+    padding: $padding;
+    margin-bottom: $margin;
+    background-color: $sand-tint;
+    border: none;
+    @include round-corners;
+}
+
+.well-large {
+    padding: ($padding + 0.5);
+    @include round-corners;
+}
+
+.well-small {
+    padding: ($padding - 0.5);
+    @include round-corners;
+}

@@ -1,0 +1,176 @@
+/* NAVBAR */
+@import 'lib';
+
+$navbar-background-color: $navbar-background;
+$navbar-active-text: $inverse-text;
+$navbar-active-background-color: $teal3;
+$navbar-brand-text: $primary-text;
+$navbar-brand-text-hover: $teal3;
+$navbar-link-color: $primary-text;
+$navbar-link-color-hover: $teal3;
+$navbar-link-background-hover: $teal4;
+$navbar-link-color-active: $teal3;
+$navbar-dropdown-border: $border-type $border-color $border-size;
+$navbar-dropdown-button-text: $teal4;
+$navbar-dropdown-button-active-background: $teal;
+$navbar-inverse-background: $inverse-background;
+$navbar-inverse-dropdown-button-active-background: $primary-background;
+
+.navbar {
+    background: $navbar-background-color;
+    padding-top: ($padding * .025);
+    padding-bottom: ($padding * .025);
+    margin-bottom: $margin;
+    -moz-box-shadow: 0 2px 3px .5px $teal2;
+    -webkit-box-shadow: 0 2px 3px .5px $teal2;
+    box-shadow: 0 2px 3px .5px $teal2;
+}
+
+.navbar-default {
+    border: 0;
+    border-bottom: $border-size $border-type $border-color;
+    -ms-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-weight: 200;
+    color: $navbar-link-color;
+    @include transition;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: $navbar-link-color-hover;
+    -moz-box-shadow: 0 2px 0 0 $teal3;
+    -webkit-box-shadow: 0 2px 0 0 $teal3;
+    box-shadow: 0 2px 0 0 $teal3;
+    @include transition;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: $navbar-link-color-hover;
+    background: $navbar-link-background-hover;
+}
+
+.navbar-brand {
+    font-family: $heading-copy;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: ($font-size + 0.5);
+    font-weight: 700;
+}
+
+.navbar-brand a {
+    color: $navbar-brand-text;
+}
+
+.navbar-default .navbar-brand {
+    color: $navbar-brand-text;
+}
+
+a.navbar-brand {
+    width: 235px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand a:hover,
+.navbar-default .navbar-brand a:focus {
+    color: $navbar-brand-text-hover;
+}
+
+.navbar-default .navbar-nav > li.active {
+    background: $navbar-background-color;
+    color: $navbar-link-color-hover;
+    -moz-box-shadow: 0 2px 0 0 #a5d5aa;
+    -webkit-box-shadow: 0 2px 0 0 #a5d5aa;
+    box-shadow: 0 2px 0 0 #a5d5aa;
+}
+
+.navbar-brand img {
+    width: 10%;
+    min-width: 41.28px;
+    float: left;
+    margin-top: ($margin * -0.5);
+    padding-right: ($padding * 0.5);
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    color: $navbar-dropdown-button-text;
+    background-color: $navbar-dropdown-button-active-background;
+}
+
+.navbar-nav > li > a {
+    color: $navbar-link-color;
+    /*
+    padding-top: ($padding / 2);
+    padding-bottom: ($padding / 2);
+    font-size: ($font-size - 0.125);
+    */
+    font-weight: 700;
+    font-family: $heading-copy;
+    @include transition;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border: $navbar-dropdown-border;
+}
+
+.navbar-nav .dropdown-menu .divider {
+    border-color: $border-color;
+}
+
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+    color: $navbar-dropdown-button-text;
+    background-color: $navbar-dropdown-button-active-background;
+}
+
+.navbar-inverse {
+    background: $navbar-inverse-background;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background: $navbar-inverse-dropdown-button-active-background;
+}
+
+
+.nav .caret {
+    border-top-color: $teal4;
+    border-bottom-color: $teal4;
+    margin-top: 0px; // matches height of caret 
+}
+
+.nav a:hover .caret,
+.nav a:focus .caret,
+.nav a:active .caret {
+    border-top-color: $teal3;
+    border-bottom-color: $teal3;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: $teal2;
+    @include round-corners;
+    @include transition;
+    &:hover{
+        background: $teal3;
+        border-color: $teal3;
+    }
+    &:active, &:focus {
+        background: $teal4;
+        border-color: $teal4;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $teal2;
+}

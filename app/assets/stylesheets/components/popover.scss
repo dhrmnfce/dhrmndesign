@@ -1,0 +1,14 @@
+/* POPOVER */
+@import 'lib';
+
+.popover-title {
+    padding: $padding;
+    font-size: $font-size;
+    line-height: $base-line-height;
+    background: $primary-background;
+    border-bottom: $border-size $border-type $border-color;
+}
+
+.popover-content {
+    padding: $padding;
+}

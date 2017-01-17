@@ -1,0 +1,8 @@
+/* PAGE HEADERS */
+@import 'lib';
+
+.page-header {
+    margin: ($margin * 2) 0;
+    border-bottom: $border-size $border-type $border-color;
+    padding-bottom: ($padding - 0.5);
+}
