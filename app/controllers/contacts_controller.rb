@@ -10,9 +10,9 @@ class ContactsController < ApplicationController
         if @contact.save
             name = params[:contact][:name]
             email = params[:contact][:email]
-            body = params[:contact][:body]
+            body = params[:contact][:message]
+            ContactMailer.contact_email(name, email, body).deliver
             
-            ContactMailer.contact_email(name, email, body)
             flash[:success] = "Thank you, your message has been sent."
             redirect_to :back
         else
